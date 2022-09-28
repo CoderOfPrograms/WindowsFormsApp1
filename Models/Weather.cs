@@ -8,11 +8,14 @@ namespace WeatherAPI.Models
 {
     public class Weather
     {
-        public int temperature { get; set; }
-        public int high { get; set; }
-        public int low { get; set; }
-        public int feelsLike { get; set; }
-        public int wind { get; set; }
-        public String clouds { get; set; }
+        public string City { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+        public string CurrentTemperature { get; set; }
+        public string HighTemp { get; set; }
+        public string LowTemp { get; set; }
+        public string FeelsLike { get; set; }
+        public string Wind { get; set; }
+        public string Clouds { get; set; }
     }
 }

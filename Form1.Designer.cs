@@ -80,6 +80,7 @@ namespace WeatherAPI
             this.btnJSON.TabIndex = 2;
             this.btnJSON.Text = "Get Weather (JSON)";
             this.btnJSON.UseVisualStyleBackColor = false;
+            this.btnJSON.Click += new System.EventHandler(this.btnJSON_Click);
             // 
             // label1
             // 

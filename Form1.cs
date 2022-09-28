@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WeatherAPI.Models;
+
 
 namespace WeatherAPI
 {
@@ -20,6 +22,7 @@ namespace WeatherAPI
         private void Form1_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -83,6 +86,11 @@ namespace WeatherAPI
         }
 
         private void btnXML_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnJSON_Click(object sender, EventArgs e)
         {
 
         }
