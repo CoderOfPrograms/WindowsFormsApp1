@@ -147,7 +147,7 @@ namespace WeatherAPI
 
             try
             {
-                weather = WeatherService.GetWeather(iZip, isXML);
+               // weather = WeatherService.GetWeather(iZip, isXML);
 
                 this.PopulateWeatherData(weather);
             }
