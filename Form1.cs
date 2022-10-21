@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WeatherAPI.Models;
-
+using WeatherAPI.Services;
 
 namespace WeatherAPI
 {
@@ -147,7 +147,7 @@ namespace WeatherAPI
 
             try
             {
-               // weather = WeatherService.GetWeather(iZip, isXML);
+               weather = WeatherService.GetWeather(iZip, isXML);
 
                 this.PopulateWeatherData(weather);
             }
@@ -167,7 +167,7 @@ namespace WeatherAPI
             this.txtLatitude.Text = weather[0].Latitude;
             this.txtLongitude.Text = weather[0].Longitude;
             this.txtLow.Text = weather[0].LowTemp;
-            this.txtTemperature.Text = weather[0].CurrentTemperature;
+            this.txtTemperature.Text = weather[0].CurrentTemp;
             this.txtWinds.Text = weather[0].Wind;
         }
 
